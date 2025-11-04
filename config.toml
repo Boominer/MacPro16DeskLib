@@ -1,0 +1,32 @@
+# This is a toml file
+# Escape character - \
+    # \n - newline 
+    # \t - tab
+    # \\ - \ itself
+    # \" - "
+    # \' - '
+
+name = 'Min'
+age = 59
+sex = "Male"
+hobbies = ['reading','writing','coding']
+birthdate = 1966-07-01T00:00:00Z
+
+# toml dict 两种写法
+shape = {height=1, weight = 2}
+
+[account]
+bilibili = 'Youtube'
+youtube = 'Bilibili'
+bilibili.name = 'Something'
+bilibili.password = 'Somethingelse'
+
+
+# toml table group 
+[[account]]
+name = 'min'
+username = 'dm'
+
+[[account]]
+name = 'deng'
+username = 'ding'
