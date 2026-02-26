@@ -97,3 +97,21 @@ for q in sampled_questions:
     #print(f"  URL: {url}")
     print(f"  URL: {clickable}")
     print()
+
+"""
+
+Linked List: 206, 83, 141, 203, 21, 160, 234, 876, 19
+Two Pointers: 977, 344, 283, 167, 125, 15
+Sliding Window: 643, 209, 219, 3
+Stack/Queue: 20, 232, 225, 155, 150, 496
+Hash Table: 1, 242, 217, 349, 383, 409, 205, 451
+Binary Search: 704, 35*, 69_, 367, 153_, 33_, 34
+DFS (Trees): 104, 110*, 543, 226, 112, 101
+BFS (Trees): 102, 107, 513, 111*
+DFS (Grids): 200, 695*, 733, 79*
+BFS (Grids): 994, 1091, 752!, 286
+Graph: 1971, 841, 463, 207
+Dynamic Programming: 70, 746, 198, 213, 121, 53, 62, 63, 64
+Array / Greedy: 53, 122, 238, 560, 66, 268
+Intervals: 252, 56, 57, 435, 253
+"""
