@@ -99,44 +99,236 @@ for q in sampled_questions:
     print()
 
 """
-LeetCode 核心题单 (优化版 - 肌肉记忆级别)
-以下是经过深思熟虑后的 LeetCode 终极核心题单 (V3.0)。
-V3.0 终极核心题单：肌肉记忆版
+# LeetCode 核心题单 V5.0 — 肌肉记忆版
 
-1. Linked List (指针操作基石)
-基础： 206 (反转), 141 (环), 21 (合并), 160 (相交)
-进阶： 19 (删除倒数N), 23 (合并K个- 结合Heap), 142 (环形入口), 143 (重排链表)
-2. Two Pointers & Sliding Window (线性最优解)
-快慢/左右指针： 977 (平方数组), 15 (三数之和), 11 (盛水最多), 42 (接雨水 - 高阶必练)
-滑动窗口： 209 (最小长度), 3 (无重复最长子串), 76 (最小覆盖子串 - Hard，但必会)
-3. Stack & Queue (单调性与模拟)
-基础： 20 (括号), 155 (最小栈), 150 (逆波兰)
-单调栈 (核心)： 739 (每日温度), 84 (柱状图中最大矩形 - 选练)
-单调队列： 239 (滑动窗口最大值 - 肌肉记忆级别)
-4. Binary Search (不仅是在数组里找数)
-基础二分： 704, 34 (范围查找), 33 & 153 (旋转数组)
-二分答案 (高频)： 875 (爱吃香蕉的珂珂), 1011 (送货能力) —— 这类题面试极多，必须掌握逻辑
-5. Priority Queue (Heap - 动态最值)
-Top K： 215 (第K大), 347 (高频元素), 973 (最接近原点)
-多路归并/动态： 23 (合并K个链表), 295 (数据流中位数)
-6. DFS / BFS / Backtracking (搜索与穷举)
-树： 104, 226, 110, 236 (最近公共祖先), 124 (最大路径和 - Hard但高频)
-岛屿/矩阵： 200 (岛屿数量), 994 (腐烂橘子), 542 (01矩阵)
-回溯 (模板)： 46 (全排列), 78 (子集), 39 (组合总和), 79 (单词搜索)
-7. Graph (图论核心)
-入度/拓扑排序： 207 (课程表), 210 (课程表II)
-并查集 (Union-Find)： 547 (省份数量), 200 (也可用UF解)
-最短路： 743 (Dijkstra 模板 - 属于 PQ 应用)
-8. Dynamic Programming (决策与空间优化)
-入门： 70, 198, 121
-经典： 322 (零钱兑换), 139 (单词拆分), 300 (最长递增子序列)
-二维： 62, 1143 (最长公共子序列), 72 (编辑距离 - 大厂常客)
-背包： 416 (分割等和子集)
-9. Trie (前缀树 - 字典类问题)
-208 (实现 Trie), 211 (添加与搜索单词) —— 只需这两道，肌肉记忆就够了
-10. Intervals & Greedy (区间与贪心)
-56 (合并区间), 57 (插入区间), 253 (会议室II - 高频), 435 (无重叠区间)
+---
 
+## 0. Arrays & Hashing
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 1 | Two Sum | Amazon #1，每家公司必考 |
+| 49 | Group Anagrams | Microsoft / Meta top 5 |
+| 128 | Longest Consecutive Sequence | Google / Meta 高频，Hash Set 模式 |
+| 238 | Product of Array Except Self | Apple 高频，无除法技巧 |
+
+---
+
+## 1. Linked List
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 206 | Reverse Linked List | |
+| 141 | Linked List Cycle | |
+| 21 | Merge Two Sorted Lists | |
+| 19 | Remove Nth Node From End | |
+| 138 | Copy List with Random Pointer | ⭐ 新增 — Hash Map + 链表，全公司高频 |
+| 142 | Linked List Cycle II | |
+| 143 | Reorder List | |
+| 23 | Merge K Sorted Lists | 结合 Heap |
+
+---
+
+## 2. Two Pointers & Sliding Window
+
+### 快慢 / 左右指针
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 977 | Squares of a Sorted Array | |
+| 15 | 3Sum | |
+| 11 | Container With Most Water | |
+| 42 | Trapping Rain Water | 高阶必练 |
+
+### 滑动窗口
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 209 | Minimum Size Subarray Sum | |
+| 3 | Longest Substring Without Repeating Characters | |
+| 424 | Longest Repeating Character Replacement | Microsoft top 5 |
+| 567 | Permutation in String | 固定窗口模式 |
+| 76 | Minimum Window Substring | Hard，但必会 |
+
+---
+
+## 3. Stack & Queue
+
+### 基础
+
+| # | 题目 |
+|---|------|
+| 20 | Valid Parentheses |
+| 155 | Min Stack |
+| 150 | Evaluate Reverse Polish Notation |
+
+### 单调栈
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 739 | Daily Temperatures | |
+| 84 | Largest Rectangle in Histogram | Google / Amazon 高频 Hard |
+
+### 单调队列
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 239 | Sliding Window Maximum | 肌肉记忆级别 |
+
+---
+
+## 4. Binary Search
+
+### 基础二分
+
+| # | 题目 |
+|---|------|
+| 704 | Binary Search |
+| 34 | Find First and Last Position of Element |
+| 33 | Search in Rotated Sorted Array |
+| 153 | Find Minimum in Rotated Sorted Array |
+
+### 二分答案
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 875 | Koko Eating Bananas | 2025–26 趋势模式，必掌握 |
+| 1011 | Capacity To Ship Packages Within D Days | 同上 |
+
+---
+
+## 5. Priority Queue / Heap
+
+| # | 题目 |
+|---|------|
+| 215 | Kth Largest Element in an Array |
+| 347 | Top K Frequent Elements |
+| 973 | K Closest Points to Origin |
+
+---
+
+## 6. Design
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 146 | LRU Cache | ⭐ 新增 — 全 FAANG 必考，Hash Map + 双向链表 |
+
+> 这是唯一需要掌握的 Design 题。它直接考查你对数据结构组合的理解，是每家公司的标准考题。
+
+---
+
+## 7. DFS / BFS / Backtracking
+
+### 树
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 104 | Maximum Depth of Binary Tree | |
+| 226 | Invert Binary Tree | |
+| 543 | Diameter of Binary Tree | ⭐ 新增 — Meta / Salesforce 高频，DFS 后序模式 |
+| 110 | Balanced Binary Tree | |
+| 98 | Validate Binary Search Tree | BST 基础，每家公司必考 |
+| 236 | Lowest Common Ancestor of a Binary Tree | |
+| 124 | Binary Tree Maximum Path Sum | Hard，但高频 |
+| 297 | Serialize and Deserialize Binary Tree | Google 2024–25 top 3 |
+
+### 岛屿 / 矩阵
+
+| # | 题目 |
+|---|------|
+| 200 | Number of Islands |
+| 994 | Rotting Oranges |
+| 542 | 01 Matrix |
+
+### 回溯
+
+| # | 题目 |
+|---|------|
+| 46 | Permutations |
+| 78 | Subsets |
+| 39 | Combination Sum |
+| 79 | Word Search |
+
+---
+
+## 8. Graph
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 207 | Course Schedule | 拓扑排序 |
+| 210 | Course Schedule II | 拓扑排序 |
+| 269 | Alien Dictionary | ⭐ 新增 — 全 FAANG 必考，拓扑排序 Hard |
+| 547 | Number of Provinces | 并查集 |
+| 743 | Network Delay Time | Dijkstra 模板 |
+| 417 | Pacific Atlantic Water Flow | 多源 BFS，Google / Meta top 10 |
+
+---
+
+## 9. Dynamic Programming
+
+### 入门
+
+| # | 题目 |
+|---|------|
+| 70 | Climbing Stairs |
+| 198 | House Robber |
+| 213 | House Robber II |
+| 121 | Best Time to Buy and Sell Stock |
+
+### 经典
+
+| # | 题目 |
+|---|------|
+| 322 | Coin Change |
+| 139 | Word Break |
+| 300 | Longest Increasing Subsequence |
+
+### 二维
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 62 | Unique Paths | |
+| 1143 | Longest Common Subsequence | |
+| 72 | Edit Distance | 大厂常客，Google / Dropbox 高频 |
+
+### 背包
+
+| # | 题目 |
+|---|------|
+| 416 | Partition Equal Subset Sum |
+
+---
+
+## 10. Trie
+
+| # | 题目 |
+|---|------|
+| 208 | Implement Trie (Prefix Tree) |
+| 211 | Design Add and Search Words Data Structure |
+
+---
+
+## 11. Intervals & Greedy
+
+| # | 题目 | 说明 |
+|---|------|------|
+| 56 | Merge Intervals | Amazon / Meta / Stripe 最高频 |
+| 57 | Insert Interval | |
+| 253 | Meeting Rooms II | 高频（Premium，可用 #1094 代替）|
+| 435 | Non-overlapping Intervals | |
+
+---
+
+## V5.0 变更摘要
+
+| 变更 | 题目 | 原因 |
+|------|------|------|
+| ⭐ 新增 | #138 Copy List with Random Pointer | 全公司高频，Hash Map + 链表组合模式 |
+| ⭐ 新增 | #543 Diameter of Binary Tree | Meta / Salesforce 2025 高频，DFS 后序模式 |
+| ⭐ 新增 | #146 LRU Cache（新 Design 章节） | 全 FAANG 必考，2025–26 报告一致验证 |
+| ⭐ 新增 | #269 Alien Dictionary | 全 5 家 FAANG 考过，拓扑排序 Hard 代表题 |
+| 📌 排序调整 | 滑动窗口题目按难度重排 | 学习曲线更合理 |
+| 📌 章节重排 | Design 独立成章，树题补充 #543 | 结构更清晰 |
 """
 
 # 232. 1091, 752!, 286 - Mar 2 
@@ -145,4 +337,4 @@ Top K： 215 (第K大), 347 (高频元素), 973 (最接近原点)
 # mar 15 - 752
 # nar 22 - 153, 111
 # mar 29 - 695
-# apr 1 -  79, 111, 994, 733, 752, 94, 110, 286, 1971, 33
+# apr 1 -  79, 111, 994, 733, 752, 94, 110, 286, 1971, 33, 153
