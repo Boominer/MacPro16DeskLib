@@ -102,22 +102,14 @@ for q in sampled_questions:
 # LeetCode 核心题单 V5.0 — 肌肉记忆版
 
 ---
-
 ## 0. Arrays & Hashing
-
-| # | 题目 | 说明 |
-|---|------|------|
 | 1 | Two Sum | Amazon #1，每家公司必考 |
 | 49 | Group Anagrams | Microsoft / Meta top 5 |
 | 128 | Longest Consecutive Sequence | Google / Meta 高频，Hash Set 模式 |
 | 238 | Product of Array Except Self | Apple 高频，无除法技巧 |
 
 ---
-
 ## 1. Linked List
-
-| # | 题目 | 说明 |
-|---|------|------|
 | 206 | Reverse Linked List | |
 | 141 | Linked List Cycle | |
 | 21 | Merge Two Sorted Lists | |
@@ -128,7 +120,6 @@ for q in sampled_questions:
 | 23 | Merge K Sorted Lists | 结合 Heap |
 
 ---
-
 ## 2. Two Pointers & Sliding Window
 
 ### 快慢 / 左右指针
