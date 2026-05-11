@@ -107,17 +107,20 @@ for q in sampled_questions:
 | 49 | Group Anagrams | Microsoft / Meta top 5 |
 | 128 | Longest Consecutive Sequence | Google / Meta 高频，Hash Set 模式 |
 | 238 | Product of Array Except Self | Apple 高频，无除法技巧 |
+# May 8 
 
 ---
 ## 1. Linked List
-| 206 | Reverse Linked List | |
-| 141 | Linked List Cycle | |
-| 21 | Merge Two Sorted Lists | |
-| 19 | Remove Nth Node From End | |
-| 138 | Copy List with Random Pointer | ⭐ 新增 — Hash Map + 链表，全公司高频 |
-| 142 | Linked List Cycle II | |
-| 143 | Reorder List | |
+| 206 | Reverse Linked List 
+| 141 | Linked List Cycle 
+| 21 | Merge Two Sorted Lists 
+| 19 | Remove Nth Node From End 
+| 138 | Copy List with Random Pointer 
+| 142 | Linked List Cycle II 
+| 143 | Reorder List 
 | 23 | Merge K Sorted Lists | 结合 Heap |
+
+# 138, 143, 23 - May 9
 
 ---
 ## 2. Two Pointers & Sliding Window
