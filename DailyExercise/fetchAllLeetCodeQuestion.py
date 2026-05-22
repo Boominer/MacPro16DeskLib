@@ -107,7 +107,7 @@ for q in sampled_questions:
 | 49 | Group Anagrams | Microsoft / Meta top 5 |
 | 128 | Longest Consecutive Sequence | Google / Meta 高频，Hash Set 模式 |
 | 238 | Product of Array Except Self | Apple 高频，无除法技巧 |
-# May 8 
+# May 8 49, 128, 238
 
 ---
 ## 1. Linked List
@@ -120,24 +120,20 @@ for q in sampled_questions:
 | 143 | Reorder List 
 | 23 | Merge K Sorted Lists | 结合 Heap |
 
-# 138, 143, 23 - May 9
+# May 11 - 138, 23 
 
 ---
 ## 2. Two Pointers & Sliding Window
 
 ### 快慢 / 左右指针
-
-| # | 题目 | 说明 |
-|---|------|------|
-| 977 | Squares of a Sorted Array | |
-| 15 | 3Sum | |
+| 977 | Squares of a Sorted Array
+| 15 | 3Sum
 | 11 | Container With Most Water | |
 | 42 | Trapping Rain Water | 高阶必练 |
 
-### 滑动窗口
+# May 13 - 11, 42
 
-| # | 题目 | 说明 |
-|---|------|------|
+### 滑动窗口
 | 209 | Minimum Size Subarray Sum | |
 | 3 | Longest Substring Without Repeating Characters | |
 | 424 | Longest Repeating Character Replacement | Microsoft top 5 |
@@ -145,6 +141,8 @@ for q in sampled_questions:
 | 76 | Minimum Window Substring | Hard，但必会 |
 
 ---
+
+# 1971
 
 ## 3. Stack & Queue
 
