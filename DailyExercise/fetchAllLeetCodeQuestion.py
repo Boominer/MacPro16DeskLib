@@ -141,8 +141,8 @@ for q in sampled_questions:
 | 76 | Minimum Window Substring | Hard，但必会 |
 
 ---
-
-# 1971
+# 1971, 143, 424, 752, 203 - May 28th
+# 567, 76 - May 28th 
 
 ## 3. Stack & Queue
 
