@@ -141,23 +141,20 @@ for q in sampled_questions:
 | 76 | Minimum Window Substring | Hard，但必会 |
 
 ---
-# 1971, 143, 424, 752, 203 - May 28th
-# 567, 76 - May 28th 
+# 1971, 143, 424, 752 - May 28th
+# 567, 76, 42 - Jun 1st
 
 ## 3. Stack & Queue
 
 ### 基础
 
-| # | 题目 |
-|---|------|
 | 20 | Valid Parentheses |
 | 155 | Min Stack |
 | 150 | Evaluate Reverse Polish Notation |
+# Jun 3 
 
 ### 单调栈
 
-| # | 题目 | 说明 |
-|---|------|------|
 | 739 | Daily Temperatures | |
 | 84 | Largest Rectangle in Histogram | Google / Amazon 高频 Hard |
 
