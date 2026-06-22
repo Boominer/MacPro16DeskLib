@@ -151,12 +151,14 @@ for q in sampled_questions:
 | 20 | Valid Parentheses |
 | 155 | Min Stack |
 | 150 | Evaluate Reverse Polish Notation |
+
 # Jun 3 
 
 ### 单调栈
 
 | 739 | Daily Temperatures | |
 | 84 | Largest Rectangle in Histogram | Google / Amazon 高频 Hard |
+# Jun 21 - 286, 33, 1971, 111(2 methods), 110 
 
 ### 单调队列
 
